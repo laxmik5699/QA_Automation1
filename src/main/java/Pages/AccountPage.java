@@ -10,7 +10,7 @@ public class AccountPage {
 
     By accountInformation = By.xpath("//b[contains(text(),'Enter Account Information')]");
 
-    By titleMr = By.id("id_gender1");
+    By titleMrs = By.id("id_gender1");
     By password = By.id("password");
 
     By day = By.id("days");
@@ -42,11 +42,12 @@ public class AccountPage {
         this.driver = driver;
     }
     public boolean isAccountInformationVisible() {
-        return driver.findElement(accountInformation).isDisplayed();
+        return driver.
+                findElement(accountInformation).isDisplayed();
     }
     public void fillAccountDetails() {
 
-        driver.findElement(titleMr).click();
+        driver.findElement(titleMrs).click();
 
         driver.findElement(password).sendKeys("aarcin@1234");
 
@@ -60,8 +61,8 @@ public class AccountPage {
         driver.findElement(firstName).sendKeys("Aarcin");
         driver.findElement(lastName).sendKeys("User");
         driver.findElement(company).sendKeys("Test Company");
-        driver.findElement(address).sendKeys("Test Address");
-        driver.findElement(address2).sendKeys("Test Address 2");
+        driver.findElement(address).sendKeys("Test Address1");
+        driver.findElement(address2).sendKeys("Test Address2");
 
         new Select(driver.findElement(country)).selectByVisibleText("India");
 

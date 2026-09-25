@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Automation Exercise Suite">
+    <listeners>
+                <listener class-name="utilities.CustomTestListner"/>
+        <!--        <listener class-name="utilities.ExtentReportManager"/>-->
+        <!--        <listener class-name="utilities.EmailUtils"/>-->
+<!--        <listener class-name="utilities.ExtentReporterManagerSS"/>-->
+    </listeners>
+
+    <test name="Login Test">
+        <classes>
+            <class name="TestCase.RegisterUserTest"/>
+            <class name="TestCase.LoginAutoNG"/>
+            <class name="TestCase.ContactUs"/>
+
+        </classes>
+    </test>
+
+</suite>

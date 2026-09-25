@@ -45,8 +45,8 @@ public class RegisterUserTest {
             Assert.assertTrue(loginPage.isNewUserSignupVisible());
 
             // Step 6: Enter Name and Email
-            String username = "TestUser";
-            String email = "test" + System.currentTimeMillis() + "@gmail.com";
+            String username = "aarcinlx";
+            String email = "test" + System.currentTimeMillis() + "aarcin@gmail.com";
 
             loginPage.enterSignupDetails(username, email);
 
