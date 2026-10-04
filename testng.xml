@@ -13,8 +13,6 @@
             <class name="TestCase.RegisterUserTest"/>
             <class name="TestCase.LoginAutoNG"/>
             <class name="TestCase.ContactUs"/>
-
         </classes>
     </test>
-
 </suite>
