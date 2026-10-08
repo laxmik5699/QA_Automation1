@@ -25,19 +25,13 @@ public class EmailUtils {
 
         Properties prop = new Properties();  //Creates a Properties object to hold mail server settings.
        prop.put("mail.smtp.host", "smtp.gmail.com");
-prop.put("mail.smtp.port", "587");
-prop.put("mail.smtp.auth", "true");
-prop.put("mail.smtp.starttls.enable", "true");
-prop.put("mail.smtp.starttls.required", "true");
-prop.put("mail.smtp.ssl.trust", "smtp.gmail.com");
-//
-//       prop.put("mail.smtp.auth", "true"); //Tells SMTP server that login authentication is required.
-//        prop.put("mail.smtp.host", "smtp.gmail.com"); //SMTP Host
-//        prop.put("mail.smtp.starttls.enable", "true"); //Enables encryption using TLS.
-//        prop.put("mail.smtp.port", "587"); //Port 587 is used for TLS email sending.
-//        prop.put("mail.smtp.starttls.required",true);
+       prop.put("mail.smtp.port", "587");
+       prop.put("mail.smtp.auth", "true");
+       prop.put("mail.smtp.starttls.enable", "true");
+       prop.put("mail.smtp.starttls.required", "true");
+       prop.put("mail.smtp.ssl.trust", "smtp.gmail.com");
 
-        // Create session with Authentication
+
         // Create session with Authentication
         Session session = Session.getInstance(prop, new Authenticator() {
             @Override
